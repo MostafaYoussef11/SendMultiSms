@@ -11,8 +11,12 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="0.5dp"
+        android:layout_marginRight="0.5dp"
         android:id="@+id/layoutButtons"
+        android:padding="5dp"
+        android:background="@color/colcrPrimaryWhit"
         >
 
         <Button
@@ -38,20 +42,30 @@
             android:background="@drawable/btn_sms"
             android:layout_margin="5dp"
             />
+        <Button
+            android:id="@+id/btn_wrsms"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_wr_sms"
+            android:layout_margin="5dp"
+            />
+        <Button
+            android:id="@+id/btn_home"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_home"
+            android:layout_margin="5dp"
+            />
     </LinearLayout>
 
-    <LinearLayout
+    <RelativeLayout
+        android:id="@+id/contenerFragment"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="400dp"
         android:layout_below="@+id/layoutButtons"
         android:layout_alignParentBottom="true"
         >
-        <ListView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"></ListView>
-
-
-    </LinearLayout>
+    </RelativeLayout>
 
 
 
