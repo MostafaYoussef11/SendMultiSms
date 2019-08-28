@@ -20,7 +20,7 @@
         >
 
         <Button
-            android:id="@+id/btn_select"
+            android:id="@+id/btnSDCard"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/btn_folder"
@@ -28,10 +28,10 @@
             />
 
         <Button
-            android:id="@+id/btn_Exsl"
+            android:id="@+id/btn_up"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="@drawable/excel_btn"
+            android:background="@drawable/btn_up_dir"
             android:layout_margin="5dp"
              />
 
@@ -50,24 +50,27 @@
             android:layout_margin="5dp"
             />
         <Button
-            android:id="@+id/btn_home"
+            android:id="@+id/btn_excell"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="@drawable/btn_home"
+            android:background="@drawable/excel_btn"
             android:layout_margin="5dp"
             />
     </LinearLayout>
 
-    <RelativeLayout
-        android:id="@+id/contenerFragment"
+    <ListView
+        android:id="@+id/List_File"
         android:layout_width="match_parent"
         android:layout_height="400dp"
         android:layout_below="@+id/layoutButtons"
-        android:layout_alignParentBottom="true"
-        >
-    </RelativeLayout>
+        android:layout_alignParentBottom="true"></ListView>
 
-
+    <ListView
+        android:id="@+id/listnumber"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/layoutButtons"
+        android:layout_alignParentBottom="true"></ListView>
 
 
 </RelativeLayout>
